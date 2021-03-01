@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Test cores of front-end..html,css,js</title>
+    <style>
+        h2{
+            color: blueviolet;
+            background-color: chocolate;
+            font-size: 4rem;
+            text-align: center;
+        }
+        body{
+            background-color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+    <input id="in1" type="text" placeholder="Text Color">
+    <input id="in2" type="text" placeholder="Background Color">
+    <button onclick="changeColor()">Change Color</button>
+    <h2 style="padding-top: 1rem;">Codecamp Thailand</h2>
+<script>
+    alert("Hello")
+    function changeColor(){
+        // alert("Change Color Function.....")
+        let tcolor = document.querySelector('#in1').value
+        let bcolor = document.querySelector('#in2').value
+        // alert(tcolor)
+        // alert(bcolor)
+        document.querySelector('h2').style.color = tcolor
+        document.querySelector('h2').style.backgroundColor = bcolor
+        
+    }
+</script>
+</body>
+</html>
